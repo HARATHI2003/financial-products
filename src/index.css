@@ -1,13 +1,78 @@
+/* General Styles */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;                /* Use flexbox for layout */
+  justify-content: center;      /* Center items horizontally */
+  flex-wrap: wrap;             /* Allow buttons to wrap on small screens */
+  margin-bottom: 20px;         /* Space below the buttons */
+}
+
+button {
+  background-color: #007BFF; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px);
+}
+
+/* Selected Product Styles */
+.selected-product {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.selected-product h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.selected-product p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  button {
+      width: 100%; /* Full width buttons on smaller screens */
+      margin-bottom: 10px; /* Spacing between buttons */
+  }
 }
